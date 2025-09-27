@@ -1,4 +1,4 @@
-import {TupleToUnion} from './type-utils.js'
+import { TupleToUnion } from './type-utils.js'
 
 export enum NetworkEnum {
     ETHEREUM = 1,
@@ -14,7 +14,8 @@ export enum NetworkEnum {
     LINEA = 59144,
     SONIC = 146,
     UNICHAIN = 130,
-    SOLANA = 501
+    SOLANA = 501,
+    MONAD = 10143
 }
 
 export const SupportedChains = [
@@ -30,7 +31,8 @@ export const SupportedChains = [
     NetworkEnum.LINEA,
     NetworkEnum.SONIC,
     NetworkEnum.UNICHAIN,
-    NetworkEnum.SOLANA
+    NetworkEnum.SOLANA,
+    NetworkEnum.MONAD
 ] as const
 
 type UnsupportedChain = Exclude<

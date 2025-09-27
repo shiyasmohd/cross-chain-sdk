@@ -1,5 +1,5 @@
-import {NetworkEnum} from './chains.js'
-import {EvmAddress} from './domains/addresses/index.js'
+import { NetworkEnum } from './chains.js'
+import { EvmAddress } from './domains/addresses/index.js'
 
 const TrueERC20 = EvmAddress.fromString(
     '0xda0000d4000015a526378bb6fafc650cea5966f8'
@@ -21,7 +21,8 @@ export const TRUE_ERC20 = {
     [NetworkEnum.ZKSYNC]: ZKTrueERC20,
     [NetworkEnum.LINEA]: TrueERC20,
     [NetworkEnum.SONIC]: TrueERC20,
-    [NetworkEnum.UNICHAIN]: TrueERC20
+    [NetworkEnum.UNICHAIN]: TrueERC20,
+    [NetworkEnum.MONAD]: TrueERC20
 }
 
 const ESCROW_FACTORY_ADDRESS = EvmAddress.fromString(
